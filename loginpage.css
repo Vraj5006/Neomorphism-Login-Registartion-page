@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600&family=Poppins:wght@400;600&family=Secular+One&display=swap');
+#login_body{
+
+    display: grid;
+    place-items: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+    background: #d2d0e1;
+    box-shadow:  -3px -3px 7px #ffffff73,
+    2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+body{
+    display: grid;
+    background-color: #d2d0e1;
+    place-items: center;
+}
+
+#main_body button{
+    padding:15px 132px;
+    font-family: Montserrat;
+    margin-left: -1px;
+    border-radius: 50px;
+    background: linear-gradient(315deg,  #d2d0e1, #bfb8ca);
+    box-shadow:  -3px -3px 7px #ffffff73,
+    2px 2px 5px rgba(94, 104, 121, 0.288);
+    outline: none;
+    border: none;
+
+}
+#main_body button:focus {
+    color: gray;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.288)
+}
+
+button:hover {
+    box-shadow: none;
+}
+#main_body h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-family: Montserrat;
+}
+
+input{
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    text-align: center;
+    height: 43px;
+    width: 305px;
+    border-radius: 50px;
+    background: #d4cce0;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.288)
+}
+
+::placeholder{
+    font-family: Montserrat;
+    margin-left: 20px;
+}

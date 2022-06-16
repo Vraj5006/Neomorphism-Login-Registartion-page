@@ -1,0 +1,44 @@
+<html>
+<head>
+  <script>
+    function effect(){
+      var x=document.getElementsByName("e1");
+      var y=document.getElementById("button1");
+      // x.target.style.boxShadow="-18px -18px 36px #bdb6c7,18px 18px 36px #ebe2f9";
+    }
+
+    function validation(){
+      var x=document.getElementById("e1");
+      var x1=document.getElementById("p1");
+      var y=localStorage.getItem("Uname");
+      var y1=localStorage.getItem("Password");
+
+      if(y.value==x.value && y1.value==x1.value){
+        alert("Ekdum sahi banda hai bhai tu");
+
+      }
+      else {
+        alert("kya bhai ek id password yaad nahi rehta...");
+      }
+
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="loginpage.css">
+</head>
+
+<body>
+<form action="Welcome.html">
+  <div id="login_body">
+    <div id="main_body">
+      <h2>Login Form</h2><br>
+      <label>Email Id</label><br>
+      <input type="text" name="e1" id="e1" class="in" placeholder="Enter your Email-Id" onclick="effect()"><br><br>
+      <label>Password</label><br>
+      <input type="password" name="p1" id="p1" class="in" placeholder="Enter your Password" onclick="effect()"><br><br>
+      <BR>
+      <button id="button1" onclick = "validation()">Login</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
